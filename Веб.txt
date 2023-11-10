@@ -14,5 +14,6 @@ for (const option of menu.selectedOptions){
 <body>
 	<form>
 	<p>Имя: <input type='text' name = 'first_name'></p>
+        <p>Фамилия: <input type="text" name="second_name"></p>
 	</form>	
 </body>
