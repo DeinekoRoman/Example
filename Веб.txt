@@ -1,0 +1,9 @@
+<html>
+<head>
+<title> Example </title>
+</head>
+<body>
+	<form>
+	<p>Имя: <input type='text' name = 'first_name'></p>
+	</form>	
+</body>

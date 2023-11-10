@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+function OnSelect() {const menu=document.getElementById("menu");
+const result=[];
+for (const option of menu.selectedOptions){
+	result.push(option.innerText);
+	}
+	document.getElementById("output").innerText = "Выбранные товары: \n" + result.join("\n");
+}
+</script>
+<title> Example </title>
+</head>
+<body>
+	<form action='file.php'>
+	<p>Имя: <input type='text' name = 'first_name'></p>
+	<p>Фамилия: <input type='text' name = 'second_name'></p>
+	<p>Отечество: <input type='text' name = 'father_name'></p>
+	<p>Адрес: <input type='text' name = 'address'></p>
+	<p>Телефон: <input type='text' name = 'phone_number'></p>
+	<p>Почта: <input type='email' name = 'email'></p>
+	<p>Комментарий к заказу: <textarea name='comment' cols='10' rows='5'> </textarea>
+	<input type='submit' value='Оформить заказ'>
+		<select name = 'menu' size = '5' multiple id='menu' onchange='OnSelect()'>
+			<option value = 'Ex'>Excavator</option>
+			<option value = 'Bruh'>Brush</option>
+			<option value = 'Fork'>Fork</option>
+			<option value = 'Perf'>Perforator</option>
+			<option value = 'Scr'>Back Scratcher</option>
+			<option value = 'Fred'>Freddy Krueger</option>
+			<option value = 'Guit'>Bass Guitar</option>
+		</select>
+	</form>
+	<p id='output'> </p>
+</body>
