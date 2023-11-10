@@ -1,5 +1,14 @@
 <html>
 <head>
+
+function OnSelect() {const menu=document.getElementById("menu");
+const result=[];
+for (const option of menu.selectedOptions){
+	result.push(option.innerText);
+	}
+	document.getElementById("output").innerText = "Выбранные товары: \n" + result.join("\n");
+}
+
 <title> Example </title>
 </head>
 <body>
